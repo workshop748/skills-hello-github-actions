@@ -1,4 +1,4 @@
-name: Post welcome comment
+name: Step 4  
 on:
   pull_request:
     types: [opened]
@@ -13,4 +13,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
-
